@@ -6,13 +6,11 @@ import ProductType from '../types/productType'
 const FeaturedCard = ({ product, setIsDrawerOpen }: { product: ProductType; setIsDrawerOpen: (open: boolean) => void }) => {
 	const [cartProducts, setCartProducts] = useContext(CartContext)
 
-	const image = import.meta.env.VITE_IMAGE + product.attributes.image.data.attributes.url
-
 	return (
 		<Card className="w-72">
 			<a href={`/products/${product.id}`}>
 				<CardHeader shadow={false} floated={false} className="h-60">
-					<img src={image} alt={product.attributes.name} className="h-full w-full object-cover" />
+					<img src={product.attributes.image.data.attributes.url} alt={product.attributes.name} className="h-full w-full object-cover" />
 				</CardHeader>
 				<CardBody>
 					<div className="mb-2 flex items-center justify-between">

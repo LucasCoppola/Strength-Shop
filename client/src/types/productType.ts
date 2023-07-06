@@ -1,9 +1,7 @@
 type ProductType = {
-	length: number
 	id: number
 	attributes: {
 		quantity: number
-		id: number
 		name: string
 		price: number
 		description: string

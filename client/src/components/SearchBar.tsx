@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { Dialog, List, ListItem, Spinner } from '@material-tailwind/react'
+import { Dialog, List, ListItem } from '@material-tailwind/react'
 import { HiOutlineMagnifyingGlass } from 'react-icons/hi2'
 import ProductType from '../types/productType'
 
-const SearchBar = ({ products, isLoading, isError }: { products: ProductType[]; isLoading: boolean; isError: boolean }) => {
+const SearchBar = ({ products }: { products: ProductType[] }) => {
 	const [results, setResults] = useState<ProductType[] | null>([])
 	const [open, setOpen] = useState(false)
 
@@ -16,10 +16,6 @@ const SearchBar = ({ products, isLoading, isError }: { products: ProductType[]; 
 		} else {
 			setResults([])
 		}
-	}
-
-	const handleImage = (product: ProductType) => {
-		return import.meta.env.VITE_IMAGE + product.attributes.image.data.attributes.url
 	}
 
 	return (
@@ -63,22 +59,20 @@ const SearchBar = ({ products, isLoading, isError }: { products: ProductType[]; 
 					</div>
 				</form>
 
-				{isLoading ? (
-					<Spinner className="m-auto flex h-10 w-10 " color="gray" />
-				) : isError ? (
-					<p className="flex justify-center text-xl font-semibold text-gray-800">Error fetching products</p>
-				) : (
-					<List className="h-96 overflow-y-auto">
-						{results?.map((product: ProductType) => (
-							<a key={product.id} href={`/products/${product.id}`} className="text-initial">
-								<ListItem className="font-class group rounded px-3 py-1.5 text-sm text-blue-gray-700">
-									<img src={handleImage(product)} alt={product.attributes.name} className="mr-2 h-12 w-12 rounded-lg object-cover" />
-									<h5>{product.attributes.name}</h5>
-								</ListItem>
-							</a>
-						))}
-					</List>
-				)}
+				<List className="h-96 overflow-y-auto">
+					{results?.map((product: ProductType) => (
+						<a key={product.id} href={`/products/${product.id}`} className="text-initial">
+							<ListItem className="font-class group rounded px-3 py-1.5 text-sm text-blue-gray-700">
+								<img
+									src={product.attributes.image.data.attributes.url}
+									alt={product.attributes.name}
+									className="mr-2 h-12 w-12 rounded-lg object-cover"
+								/>
+								<h5>{product.attributes.name}</h5>
+							</ListItem>
+						</a>
+					))}
+				</List>
 			</Dialog>
 		</div>
 	)

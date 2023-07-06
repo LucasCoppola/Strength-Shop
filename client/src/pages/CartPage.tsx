@@ -11,11 +11,6 @@ const CartPage = ({ isDrawerOpen, setIsDrawerOpen }: { isDrawerOpen: boolean; se
 	const overlayRef = useRef<HTMLDivElement>(null)
 	const [selectQuantity, setSelectQuantity] = useLocalStorageState('selectQuantity', {})
 
-	const handleImage = (product: ProductType) => {
-		const image = import.meta.env.VITE_IMAGE + product.attributes.image.data.attributes.url
-		return image
-	}
-
 	const handleRemove = (id: number) => {
 		setCartProducts((prevProducts: ProductType[]) => {
 			const updatedProducts = prevProducts.filter((product: ProductType) => product.id !== id)
@@ -108,7 +103,7 @@ const CartPage = ({ isDrawerOpen, setIsDrawerOpen }: { isDrawerOpen: boolean; se
 											<div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
 												<a href={`/products/${product.id}`}>
 													<img
-														src={handleImage(product)}
+														src={product.attributes.image.data.attributes.url}
 														alt={product.attributes.name}
 														className="h-full w-full object-cover object-center"
 													/>

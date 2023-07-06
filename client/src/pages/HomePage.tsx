@@ -3,19 +3,17 @@ import FeaturedCard from '../components/FeaturedCard'
 import CategoryImages from '../api/CategoryImages'
 import ProductType from '../types/productType'
 import { useNavigate } from 'react-router-dom'
-import { Spinner, Dialog } from '@material-tailwind/react'
+import { Dialog } from '@material-tailwind/react'
 import { RiTruckLine, RiCustomerServiceFill } from 'react-icons/ri'
 import { BiWorld, BiCheckShield, BiCalendar } from 'react-icons/bi'
 import { HiOutlineHandRaised } from 'react-icons/hi2'
 
 type Props = {
 	products: ProductType[]
-	isLoading: boolean
-	isError: boolean
 	setIsDrawerOpen: (open: boolean) => void
 }
 
-const HomePage = ({ products, isLoading, isError, setIsDrawerOpen }: Props) => {
+const HomePage = ({ products, setIsDrawerOpen }: Props) => {
 	const [open, setOpen] = useState(false)
 	const [email, setEmail] = useState('')
 	const [validEmail, setValidEmail] = useState(true)
@@ -58,19 +56,14 @@ const HomePage = ({ products, isLoading, isError, setIsDrawerOpen }: Props) => {
 			<section className="bg-gray-50 text-center">
 				<div className=" px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 					<h2 className="mb-16 text-4xl font-bold text-gray-900">Trending Now</h2>
-					{isLoading ? (
-						<Spinner className="m-auto flex h-10 w-10 " color="gray" />
-					) : isError ? (
-						<p className="flex justify-center text-xl font-semibold text-gray-800">Error fetching products</p>
-					) : (
-						<div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10 md:gap-x-12 xl:gap-x-20 ">
-							{products
-								.filter((product) => product.attributes.type === 'featured')
-								.map((product) => (
-									<FeaturedCard key={product.id} product={product} setIsDrawerOpen={setIsDrawerOpen} />
-								))}
-						</div>
-					)}
+
+					<div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-10 md:gap-x-12 xl:gap-x-20 ">
+						{products
+							.filter((product) => product.attributes.type === 'featured')
+							.map((product) => (
+								<FeaturedCard key={product.id} product={product} setIsDrawerOpen={setIsDrawerOpen} />
+							))}
+					</div>
 				</div>
 			</section>
 

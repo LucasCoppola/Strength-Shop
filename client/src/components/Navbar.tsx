@@ -7,13 +7,10 @@ import ProductType from '../types/productType'
 
 type Props = {
 	products: ProductType[]
-	isLoading: boolean
-	isError: boolean
 	setIsDrawerOpen: (open: boolean) => void
 }
 
-const Navbar = ({ products, isLoading, isError, setIsDrawerOpen }: Props) => {
-	const SearchProps = { products, isError, isLoading }
+const Navbar = ({ products, setIsDrawerOpen }: Props) => {
 	const [cartProducts] = useContext(CartContext)
 	const [isOpen, setIsOpen] = useState(false)
 	const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -71,7 +68,7 @@ const Navbar = ({ products, isLoading, isError, setIsDrawerOpen }: Props) => {
 						</a>
 					</div>
 					<div className="relative mt-2 flex items-center md:mt-0">
-						<SearchBar {...SearchProps} />
+						<SearchBar products={products} />
 
 						<div className="flex justify-center">
 							<a onClick={() => setIsDrawerOpen(true)} className="relative transform transition-colors duration-300 hover:text-gray-600" href="#">

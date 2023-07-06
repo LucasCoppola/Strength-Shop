@@ -3,19 +3,17 @@ import ProductCard from '../components/ProductCard'
 import Accordion from '../components/Accordion'
 import ProductType from '../types/productType'
 
-import { Select, Option, Spinner } from '@material-tailwind/react'
+import { Select, Option } from '@material-tailwind/react'
 import { priceHighToLow, priceLowToHigh, sortNewest } from '../filter&sort/sort'
 import { filterCategory, filterCollection, filterPrice } from '../filter&sort/filters'
 import { useLocation } from 'react-router-dom'
 
 type Props = {
 	products: ProductType[]
-	isLoading: boolean
-	isError: boolean
 	setIsDrawerOpen: (open: boolean) => void
 }
 
-const ProductsPage = ({ products, isLoading, isError, setIsDrawerOpen }: Props) => {
+const ProductsPage = ({ products, setIsDrawerOpen }: Props) => {
 	const [sortedProducts, setSortedProducts] = useState<ProductType[]>([])
 	const [selectedSort, setSelectedSort] = useState<string | undefined>('')
 
@@ -127,17 +125,11 @@ const ProductsPage = ({ products, isLoading, isError, setIsDrawerOpen }: Props) 
 
 					{/* Products List */}
 					<div className="flex flex-grow flex-col">
-						{isLoading ? (
-							<Spinner className="m-auto flex h-10 w-10 " color="gray" />
-						) : isError ? (
-							<p className="flex justify-center text-xl font-semibold text-gray-800">Error fetching products</p>
-						) : (
-							<div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:mt-0 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8">
-								{sortedProducts.map((product) => (
-									<ProductCard product={product} key={product.id} setIsDrawerOpen={setIsDrawerOpen} />
-								))}
-							</div>
-						)}
+						<div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 md:mt-0 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8">
+							{sortedProducts.map((product) => (
+								<ProductCard product={product} key={product.id} setIsDrawerOpen={setIsDrawerOpen} />
+							))}
+						</div>
 					</div>
 				</div>
 			</div>

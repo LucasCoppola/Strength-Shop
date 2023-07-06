@@ -5,7 +5,6 @@ import ProductType from '../types/productType'
 
 const ProductCard = ({ product, setIsDrawerOpen }: { product: ProductType; setIsDrawerOpen: (open: boolean) => void }) => {
 	const [cartProducts, setCartProducts] = useContext(CartContext)
-	const image = import.meta.env.VITE_IMAGE + product.attributes.image.data.attributes.url
 
 	const isDisabled = cartProducts.some((p: ProductType) => p.id === product.id)
 
@@ -14,7 +13,7 @@ const ProductCard = ({ product, setIsDrawerOpen }: { product: ProductType; setIs
 			<a href={`/products/${product.id}`} title={product.attributes.name}>
 				<div className="aspect-h-1 aspect-w-1 xl:aspect-h-8 xl:aspect-w-7 relative w-full overflow-hidden">
 					<img
-						src={image}
+						src={product.attributes.image.data.attributes.url}
 						alt={product.attributes.name}
 						className="w-full object-cover object-center transition-opacity duration-300 group-hover:opacity-50 md:h-52 lg:h-36 xl:h-48"
 					/>

@@ -8,8 +8,8 @@ import CheckoutPage from './pages/CheckoutPage'
 import NotFoundPage from './pages/NotFoundPage'
 
 import ProductType from './types/productType'
-import fetchProducts from './api/fetchProducts'
 import CartProvider from './contexts/CartProvider'
+import data from './data.json'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -17,43 +17,20 @@ import Footer from './components/Footer'
 const App = () => {
 	const [products, setProducts] = useState<ProductType[]>([])
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-	const [status, setStatus] = useState({ isLoading: true, isError: false })
 
 	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const cachedProducts = localStorage.getItem('products')
-				if (cachedProducts) {
-					setProducts(JSON.parse(cachedProducts))
-					setStatus({ isLoading: false, isError: false })
-				} else {
-					const data = await fetchProducts()
-					setProducts(data)
-					setStatus({ isLoading: false, isError: false })
-					localStorage.setItem('products', JSON.stringify(data))
-				}
-			} catch (error) {
-				setStatus({ isLoading: false, isError: true })
-			}
-		}
-		fetchData()
-	}, [setProducts, setStatus])
-
-	const Props = {
-		products,
-		isLoading: status.isLoading,
-		isError: status.isError
-	}
+		setProducts(data)
+	}, [setProducts])
 
 	return (
 		<>
 			<CartProvider>
-				<Navbar {...Props} setIsDrawerOpen={setIsDrawerOpen} />
+				<Navbar products={products} setIsDrawerOpen={setIsDrawerOpen} />
 				<Routes>
-					<Route path="/" element={<HomePage {...Props} setIsDrawerOpen={setIsDrawerOpen} />} />
-					<Route path="/products" element={<ProductsPage {...Props} setIsDrawerOpen={setIsDrawerOpen} />} />
-					<Route path="/checkout" element={<CheckoutPage isError={status.isError} isLoading={status.isLoading} />} />
-					<Route path="/products/:id" element={<ProductDetailsPage {...Props} setIsDrawerOpen={setIsDrawerOpen} />} />
+					<Route path="/" element={<HomePage products={products} setIsDrawerOpen={setIsDrawerOpen} />} />
+					<Route path="/products" element={<ProductsPage products={products} setIsDrawerOpen={setIsDrawerOpen} />} />
+					<Route path="/checkout" element={<CheckoutPage />} />
+					<Route path="/products/:id" element={<ProductDetailsPage products={products} setIsDrawerOpen={setIsDrawerOpen} />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 				<CartPage isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />

@@ -2,17 +2,11 @@ import { useState, useContext } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { BsCheckCircle } from 'react-icons/bs'
-import { Dialog, List, ListItem, Spinner, Typography } from '@material-tailwind/react'
+import { Dialog, List, ListItem, Typography } from '@material-tailwind/react'
 import ProductType from '../types/productType'
 import { CartContext } from '../contexts/CartProvider'
 
-type Props = {
-	handleTotal: () => string
-	isLoading: boolean
-	isError: boolean
-}
-
-const CheckoutForm = ({ handleTotal, isLoading, isError }: Props) => {
+const CheckoutForm = ({ handleTotal }: { handleTotal: () => string }) => {
 	const [cartProducts] = useContext(CartContext)
 	const [isSubmitting, setIsSubmitting] = useState(false)
 	const [isOpen, setIsOpen] = useState(false)
@@ -50,10 +44,6 @@ const CheckoutForm = ({ handleTotal, isLoading, isError }: Props) => {
 	}
 
 	const renderError = (message: string) => <div>{message && <p className="absolute text-xs text-red-400">{message}</p>}</div>
-
-	const handleImage = (product: ProductType) => {
-		return import.meta.env.VITE_IMAGE + product.attributes.image.data.attributes.url
-	}
 
 	return (
 		<Formik
@@ -208,31 +198,25 @@ const CheckoutForm = ({ handleTotal, isLoading, isError }: Props) => {
 					<div className="font-class flex-col">
 						<BsCheckCircle size={50} className="mx-auto mb-3 text-green-500" />
 						<h2 className="mb-1 text-center text-2xl font-semibold text-gray-800">Thank you for your purchase!</h2>
-						{isLoading ? (
-							<Spinner className="m-auto flex h-10 w-10" color="gray" />
-						) : isError ? (
-							<p className="mr-auto flex text-xl font-semibold text-gray-800">Error fetching products</p>
-						) : (
-							<List className="custom-scrollbar max-h-80 list-disc overflow-y-auto pl-6">
-								{cartProducts.map((product: ProductType) => (
-									<a href={`/products/${product.id}`} key={product.id}>
-										<ListItem key={product.id} className="font-class group rounded px-3 py-1.5 text-sm text-blue-gray-700">
-											<div className="relative">
-												<img
-													src={handleImage(product)}
-													alt={product.attributes.name}
-													className="mr-2 h-12 w-12 rounded-lg object-cover"
-												/>
-												<span className="absolute right-0 top-0 w-6 rounded-full bg-gray-500 p-1 text-center text-xs text-white">
-													{product.attributes.quantity}
-												</span>
-											</div>
-											<h5>{product.attributes.name}</h5>
-										</ListItem>
-									</a>
-								))}
-							</List>
-						)}
+						<List className="custom-scrollbar max-h-80 list-disc overflow-y-auto pl-6">
+							{cartProducts.map((product: ProductType) => (
+								<a href={`/products/${product.id}`} key={product.id}>
+									<ListItem key={product.id} className="font-class group rounded px-3 py-1.5 text-sm text-blue-gray-700">
+										<div className="relative">
+											<img
+												src={product.attributes.image.data.attributes.url}
+												alt={product.attributes.name}
+												className="mr-2 h-12 w-12 rounded-lg object-cover"
+											/>
+											<span className="absolute right-0 top-0 w-6 rounded-full bg-gray-500 p-1 text-center text-xs text-white">
+												{product.attributes.quantity}
+											</span>
+										</div>
+										<h5>{product.attributes.name}</h5>
+									</ListItem>
+								</a>
+							))}
+						</List>
 					</div>
 				</Dialog>
 			</Form>

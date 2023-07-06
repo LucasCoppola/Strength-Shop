@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "attributes": {
+      "quantity": 1,
+      "name": "Flat Bench",
+      "price": 199.99,
+      "description": "This bench will allow you to securely take on even the heaviest of lifts. An accessible handle at the front and fitted wheels at the rear enable lifters to easily manoeuvre this bench around the gym. Features a flat front foot design to allow more space for the lifter to set up their feet without compromise.",
+      "category": "Bench",
+      "collection": "Functional",
+      "type": "featured",
+      "publishedAt": "Monday, May 29, 2023 at 2:27 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/flat-bench_rj3dsk.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "attributes": {
+      "quantity": 1,
+      "name": "Competition Plate 20KG",
+      "price": 160,
+      "description": "Machine-calibrated for next-level precision, these durable cast-iron KG plates are accurate to within 10g in weight. Each disc is cut thin to allow for max loading capacity (up to 700+ KG) and color-coded for easy identification from a distance. The back of each plate includes calibration plugs (lead on smaller plates, brass on plates 5LB and up) for an ever greater level of precision.  These plates feature a 50.40MM center hole for a snug fit on your barbell, and as a result, may not fit on some cheaper barbells not held to spec.",
+      "category": "Plates",
+      "collection": "Powerlifting",
+      "type": "featured",
+      "publishedAt": "Tuesday, May 30, 2023 at 11:13 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/rogue-weight-plate_martec.avif"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "attributes": {
+      "quantity": 1,
+      "name": "Olympic Bar",
+      "price": 265.99,
+      "description": "Olympic bar that is 2.2 meters (7.2 ft) long and weighs 20 kilograms (44 lb). The outer ends are 1.96 inches (50 mm) in diameter, while the grip section is 28 millimeters (1.1 in) in diameter and 1.31 meters (4.3 ft) in length.",
+      "category": "Barbells",
+      "collection": "Powerlifting",
+      "type": "featured",
+      "publishedAt": "Tuesday, May 30, 2023 at 11:16 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678360/6ft-Olympic-Barbell-Silver-UK_okf5ah.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "attributes": {
+      "quantity": 1,
+      "name": "Competition Plate 15KG",
+      "price": 136.5,
+      "description": "Machine-calibrated for next-level precision, these durable cast-iron KG plates are accurate to within 10g in weight. Each disc is cut thin to allow for max loading capacity (up to 700+ KG) and color-coded for easy identification from a distance. The back of each plate includes calibration plugs (lead on smaller plates, brass on plates 5LB and up) for an ever greater level of precision.  These plates feature a 50.40MM center hole for a snug fit on your barbell, and as a result, may not fit on some cheaper barbells not held to spec.",
+      "category": "Plates",
+      "collection": "Powerlifting",
+      "type": "normal",
+      "publishedAt": "Monday, June 12, 2023 at 11:01 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/rogue_15kg_2.0_jr8lxn.avif"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "attributes": {
+      "quantity": 1,
+      "name": "Competition Plate 10KG",
+      "price": 95,
+      "description": "Machine-calibrated for next-level precision, these durable cast-iron KG plates are accurate to within 10g in weight. Each disc is cut thin to allow for max loading capacity (up to 700+ KG) and color-coded for easy identification from a distance. The back of each plate includes calibration plugs (lead on smaller plates, brass on plates 5LB and up) for an ever greater level of precision.  These plates feature a 50.40MM center hole for a snug fit on your barbell, and as a result, may not fit on some cheaper barbells not held to spec.",
+      "category": "Plates",
+      "collection": "Powerlifting",
+      "type": "normal",
+      "publishedAt": "Monday, June 12, 2023 at 12:24 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678360/10kg-plate_ofwncw.avif"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "attributes": {
+      "quantity": 1,
+      "name": "Competition Plate 25KG",
+      "price": 165,
+      "description": "Machine-calibrated for next-level precision, these durable cast-iron KG plates are accurate to within 10g in weight. Each disc is cut thin to allow for max loading capacity (up to 700+ KG) and color-coded for easy identification from a distance. The back of each plate includes calibration plugs (lead on smaller plates, brass on plates 5LB and up) for an ever greater level of precision.  These plates feature a 50.40MM center hole for a snug fit on your barbell, and as a result, may not fit on some cheaper barbells not held to spec.",
+      "category": "Plates",
+      "collection": "Powerlifting",
+      "type": "normal",
+      "publishedAt": "Monday, June 12, 2023 at 12:32 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678360/25kg-plate_ztiwap.avif"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "attributes": {
+      "quantity": 1,
+      "name": "Competition Plate 5KG",
+      "price": 36,
+      "description": "Machine-calibrated for next-level precision, these durable cast-iron KG plates are accurate to within 10g in weight. Each disc is cut thin to allow for max loading capacity (up to 700+ KG) and color-coded for easy identification from a distance. The back of each plate includes calibration plugs (lead on smaller plates, brass on plates 5LB and up) for an ever greater level of precision.  These plates feature a 50.40MM center hole for a snug fit on your barbell, and as a result, may not fit on some cheaper barbells not held to spec.",
+      "category": "Plates",
+      "collection": "Powerlifting",
+      "type": "normal",
+      "publishedAt": "Monday, June 12, 2023 at 12:38 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678360/5kg-plate_imfwsx.avif"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "attributes": {
+      "quantity": 1,
+      "name": "Curl Bar",
+      "price": 225,
+      "description": "The first run of the Curl Bar includes a unique E-coat finish with bright zinc sleeves. The 1.96” diameter sleeves are compatible with most standard Olympic plates, but the 31.50” space between the sleeves means that this bar is NOT designed to be rackable.",
+      "category": "Barbells",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 10:11 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/curl-bar_aegs8v.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "attributes": {
+      "quantity": 1,
+      "name": "Trap Bar",
+      "price": 325,
+      "description": "The Trap Bar is manufactured in the USA and features a durable hexagonal frame welded from 1.5” square steel tubing. Both sets of knurled, parallel handles measure 1.34” in diameter and are spaced 25” on the center. During a workout, an athlete can easily switch from one set of handles to the other simply by flipping the bar over. This makes the TB-2 advantageous for strengthening the lockout, overloading on shrugs, and/or limiting shoulder stress during bench presses. It also enables beginners or rehabbing athletes to focus on their range of motion or gradually develop a deadlift program without putting as much pressure on the lower back.",
+      "category": "Barbells",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 10:15 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678363/trap-bar_mki32p.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "attributes": {
+      "quantity": 1,
+      "name": "Safety Squat Bar",
+      "price": 445,
+      "description": "The weight distribution is unique to this bar. Training with the Safety Squat bar is known to tax your anterior chain; the weight distribution falls between the front squat and the high-bar back squat to vary your power output training. This bar is a safer option for intense squat progressions or maximum load lifts. This bar is known to increase your maximum working weight when compared to the traditional back squat.",
+      "category": "Barbells",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 10:18 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678363/safety-bar_voesal.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "attributes": {
+      "quantity": 1,
+      "name": "Power Rack",
+      "price": 1300,
+      "description": "Available as a stand-alone unit or by converting to a Squat Stand, this rack's self-stabilizing base means you won't need to bolt it to the ground before you use it—a major benefit for those looking to protect their floors or to have more flexibility in a workout space.",
+      "category": "Racks",
+      "collection": "Racks",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 10:52 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/Power-Rack_yg0ii9.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "attributes": {
+      "quantity": 1,
+      "name": "Horizontal Plate Rack",
+      "price": 255,
+      "description": "The portable Horizontal Plate Rack incorporates new adjustable dividers that can be positioned in 1” increments along the rails, enabling greater variation in the cart’s set-up and more customization options for the user. This compact, patented design can be used to store most standard types and sizes of the plate—including Hi Temps, HG Bumpers, Competition Plates, and Steel Plates, with 33.5” of loadable space available.",
+      "category": "Racks",
+      "collection": "Racks",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 10:58 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/plate-rack_rjnby2.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "attributes": {
+      "quantity": 1,
+      "name": "Power Half Rack",
+      "price": 800,
+      "description": "The Half Rack provides everything needed to upgrade your existing stand-alone squat stand to a half rack—giving you more spotting options and plate storage space to work with.",
+      "category": "Racks",
+      "collection": "Racks",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:03 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/power-half-rack_j4cadb.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "attributes": {
+      "quantity": 1,
+      "name": "Multi Storage Rack",
+      "price": 625,
+      "description": "The largest Multi Storage Rack, this 6-foot tall unit features a set of three 70” long shelves—enough to hold up to 15 medicine balls or more than 1,000LB in bumper plates. But it’s the customization and expansion options that really make the Multi Storage Rack so valuable to a growing gym. Depending on your current needs, you can elect to swap out a standard bumper/med-ball shelf with a specialized kettlebell or dumbbell tray, add change plate pins and rail mount hangers for more versatile storage, or have a set of wheels included to make the rack mobile.",
+      "category": "Racks",
+      "collection": "Racks",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:07 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/multi_storage_rack_b0z2jw.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "attributes": {
+      "quantity": 1,
+      "name": "Dumbell Rack",
+      "price": 366,
+      "description": "Compact yet spacious, this Dumbbell Rack is the perfect way to safely store and access all your Hex weights. You can keep 10-20 pairs of dumbbells on this rack and have them easily accessible for your workouts. With solid steel construction, an anti-slip rubber base, and hard-wearing protective powder coating, your convenient new dumbbell rack is designed for home or studio gyms.",
+      "category": "Racks",
+      "collection": "Racks",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:12 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/dumbell_rack_zz7gey.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "attributes": {
+      "quantity": 1,
+      "name": "Olympic Plate Rack",
+      "price": 395,
+      "description": "Store bumper plates and Olympic plates easily with the Olympic Plate Rack. The rack is a modular weight storage option allowing users to configure it for the spacing of Olympic rubber bumper plates or traditional Olympic plates.",
+      "category": "Racks",
+      "collection": "Racks",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:15 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/Olympic-plate-rack_epep7h.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "attributes": {
+      "quantity": 1,
+      "name": "Adjustable Bench",
+      "price": 595,
+      "description": "The Adjustable Bench features an upgraded 3x3” 11-gauge steel frame, an expanded range of incline and seat positions, and an efficient bolt-together design* that enables a flat shipping cost—far less than past models. This uniquely robust, retractable unit also now includes a built-in upright storage stand (with rubber padding at the base for stability and floor protection) and our new premium textured foam pad.",
+      "category": "Bench",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:26 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/adjustable-bench_mnpkht.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "attributes": {
+      "quantity": 1,
+      "name": "Gymnastic Wood Rings",
+      "price": 95,
+      "description": "A set of Gymnastic Wood Rings provides a solid foundation for gymnastic strength building and beginner-to-advanced suspension training. With a textured, grip-friendly surface that works with or without chalk, wood rings have a distinct, natural feel preferred by many athletes. Gymnastic Wood Rings are also easy to adjust and built for lasting durability and comfort.",
+      "category": "Accessories",
+      "collection": "Calisthenics",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:30 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/rings_vgpuiv.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "attributes": {
+      "quantity": 1,
+      "name": "Weight Vest",
+      "price": 135,
+      "description": "An adjustable stretch cummerbund is included in this design to keep the vest secure as you train, while the internal retention straps do the same for the weight plates. There are convenient stash pockets for your accessories, a top admin front pocket with a hook-and-loop closure and pull tab, and laser-cut and web MOLLE platforms that offer additional carrying capacity and pouch customization.",
+      "category": "Accessories",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 11:34 AM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/wheight-vest_bpsuye.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 20,
+    "attributes": {
+      "quantity": 1,
+      "name": "Speed Rope",
+      "price": 42.5,
+      "description": "Your speed scores will soar with this innovative rope. This rope is unique with its ability to easily change lengths. Each rope comes with 10' of black-coated cable. In addition, when the cable wears out there is no need to buy a whole new rope. Purchase a replacement cable and save money.",
+      "category": "Accessories",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 12:02 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678363/speed-rope_day11m.jpg"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 21,
+    "attributes": {
+      "quantity": 1,
+      "name": "Gymnastics Grips",
+      "price": 30,
+      "description": "Gymnastics Grips are the proven accessory for protecting your hands during high-rep pull-ups, kettlebell swings, toes-to-bar, and dozens of other palm punishing movements.",
+      "category": "Accessories",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 12:05 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/gimnastics-grips_fnu8lj.avif"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 22,
+    "attributes": {
+      "quantity": 1,
+      "name": "Conditioning Rope",
+      "price": 125,
+      "description": "Use these ropes to reach a whole new level of conditioning! Conditioning Ropes began as a mainstay tool in MMA, and then CrossFit. It is now used by the majority of athletes who train for power and explosiveness. The battling rope is universal because it has an ability to build core strength and improve core-to-extremity strength that helps you to hit your next workout, or opponent, hard. Power rope training is brutal in its hit to an athlete's conditioning and is an excellent developer of grip strength.",
+      "category": "Accessories",
+      "collection": "Functional",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 12:07 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/conditioning_rope_in7h9y.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 23,
+    "attributes": {
+      "quantity": 1,
+      "name": "Dip Belt",
+      "price": 62,
+      "description": "The Dip Belt is a key tool used to train gymnastics strength through a full range of motion. Whether you’re performing dips, pull-ups, or the hip belt squat, the 1/4” wide steel chain-link system and D-shaped carabiners on the Dip Belt allow for a higher load capacity, easy adjustments, and reliable safety under extreme tension.",
+      "category": "Accessories",
+      "collection": "Calisthenics",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 12:10 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678361/dip-blet_fjrly6.webp"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": 24,
+    "attributes": {
+      "quantity": 1,
+      "name": "Parallettes",
+      "price": 135,
+      "description": "Our Parallettes can support any weight and won’t shift under pressure—no matter how hard you train. The updated design includes a convenient, bolt-together construction with new rubber feet to protect your flooring and enable easier custom spacing of the handles from one athlete to the next.",
+      "category": "Accessories",
+      "collection": "Calisthenics",
+      "type": "normal",
+      "publishedAt": "Tuesday, June 13, 2023 at 12:13 PM",
+      "image": {
+        "data": {
+          "attributes": {
+            "url": "https://res.cloudinary.com/dotpfjpno/image/upload/v1688678362/parallettes_nsoqoz.jpg"
+          }
+        }
+      }
+    }
+  }
+]
