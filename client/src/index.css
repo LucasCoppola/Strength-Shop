@@ -15,7 +15,8 @@ body {
 
 main {
 	height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../assets/bg-image.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+		url('https://res.cloudinary.com/dotpfjpno/image/upload/v1688737328/bg-image_n18nut.jpg');
 	background-size: cover;
 	background-position: center;
 	background-color: transparent !important;
