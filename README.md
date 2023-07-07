@@ -6,7 +6,8 @@ However, during the deployment phase, I encountered difficulties with the Strapi
 
 In the current version of the project, I have made changes to simplify the architecture and optimize the deployment process. As part of these changes, a JSON file is now used as the data source. With this update, the website's core functionality remains unaffected, while certain features like error handling and data fetching are no longer required and have been removed. By making this change, I was able to simplify the deployment process and ensure a smoother user experience.
 
-Please note that the original project using Strapi is still available here, showcasing the advanced features mentioned above. However, it is no longer actively maintained or updated.
+Please note that the original project using Strapi is still available [here](https://github.com/LucasCoppola/strength-shop-strapi), showcasing the features mentioned above. However, it is no longer actively maintained or updated.
+
 
 ## Features
 - Browse a catalog of products
