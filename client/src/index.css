@@ -19,6 +19,7 @@ main {
 		url('https://res.cloudinary.com/dotpfjpno/image/upload/v1688737328/bg-image_n18nut.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-color: transparent !important;
 	color: white;
 	text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
