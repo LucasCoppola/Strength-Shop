@@ -54,7 +54,7 @@ const CheckoutForm = ({ handleTotal }: { handleTotal: () => string }) => {
 				resetForm()
 			}}
 		>
-			<Form className="w-full border-b px-16 py-8 md:w-2/3 md:border-b-0 md:border-r">
+			<Form className="w-full border-b md:px-16 py-8 md:w-2/3 md:border-b-0 md:border-r">
 				<Typography className="font-class mb-6 text-3xl font-bold text-gray-800">Payment Details</Typography>
 				<div className="relative mb-4">
 					<label htmlFor="email" className="mb-1 block text-sm font-medium text-gray-700">
