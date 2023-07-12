@@ -44,7 +44,7 @@ const CheckoutForm = ({ handleTotal }: { handleTotal: () => string }) => {
 	}
 
 	const renderError = (message: string) => <div>{message && <p className="absolute text-xs text-red-400">{message}</p>}</div>
-
+// console.log(window.innerWidth)
 	return (
 		<Formik
 			initialValues={initialValues}
@@ -193,12 +193,13 @@ const CheckoutForm = ({ handleTotal }: { handleTotal: () => string }) => {
 						mount: { scale: 1, y: 0 },
 						unmount: { scale: 0.9, y: -100 }
 					}}
+					size={window.innerWidth <= 768 ? 'xl' : 'md'}
 					className="p-4"
 				>
-					<div className="font-class flex-col">
+					<div className="w-auto font-class flex-col">
 						<BsCheckCircle size={50} className="mx-auto mb-3 text-green-500" />
 						<h2 className="mb-1 text-center text-2xl font-semibold text-gray-800">Thank you for your purchase!</h2>
-						<List className="custom-scrollbar max-h-80 list-disc overflow-y-auto pl-6">
+						<List className="custom-scrollbar max-h-80 list-disc overflow-y-auto md:pl-6">
 							{cartProducts.map((product: ProductType) => (
 								<a href={`/products/${product.id}`} key={product.id}>
 									<ListItem key={product.id} className="font-class group rounded px-3 py-1.5 text-sm text-blue-gray-700">
